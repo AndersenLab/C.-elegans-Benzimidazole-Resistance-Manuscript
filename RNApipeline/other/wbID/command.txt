@@ -1,0 +1,1 @@
+perl wormbase_ID_converter.pl -a transcript -b WBID

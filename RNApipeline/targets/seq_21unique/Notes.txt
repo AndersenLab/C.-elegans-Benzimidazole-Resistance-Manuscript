@@ -1,0 +1,5 @@
+Combined N2_unique.fa and CB_unique into table form -> All_unique.csv
+Filter based on QTL interval coordinates:
+	ChrIV: 15466666 - 15907521 for N2
+	ChrIV: 15227812 - 15669096 for CB4856
+Rename to SuppTable4.csv

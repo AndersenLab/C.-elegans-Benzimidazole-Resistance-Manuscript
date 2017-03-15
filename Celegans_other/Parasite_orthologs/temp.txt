@@ -1,0 +1,263 @@
+['""', '"Drug"', '"QTLregion"', '"Gene_ID"', '"Feature_ID"', '"Gene_Name"', 'NA', 'NA']
+NA,NA
+['"1"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013527"', '"Y73F8A.22"', '"NA"', 'NA', 'NA']
+NA,NA
+['"2"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013528"', '"Y73F8A.23"', '"NA"', 'NA', 'NA']
+WBGene00227381,WBGene00260470
+['"3"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013529"', '"Y73F8A.24c"', '"NA"', 'NA', 'NA']
+NA,NA
+['"4"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013530"', '"Y73F8A.25a"', '"ntl-11"', 'NA', 'NA']
+WBGene00227382,WBGene00261924
+['"5"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013531"', '"Y73F8A.26"', '"NA"', 'NA', 'NA']
+['"6"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013536"', '"Y73F8A.32a"', '"NA"', 'NA', 'NA']
+NA,NA
+['"7"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013537"', '"Y73F8A.33"', '"NA"', 'NA', 'NA']
+WBGene00222684,NA
+['"8"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013538"', '"Y73F8A.34a.1"', '"tag-349"', 'NA', 'NA']
+WBGene00221385 WBGene00225459 WBGene00225921 WBGene00227384 WBGene00268915,WBGene00258021 WBGene00264759 WBGene00264760 WBGene00264825 WBGene00264958 WBGene00266233 WBGene00267150 WBGene00267701 WBGene00267965
+['"9"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013539"', '"Y73F8A.35a"', '"NA"', 'NA', 'NA']
+NA,NA
+['"10"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013632"', '"Y105C5A.1"', '"NA"', 'NA', 'NA']
+NA,NA
+['"11"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00004158"', '"Y105C5A.3"', '"pqn-76"', 'NA', 'NA']
+['"12"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00077752"', '"Y105C5A.508"', '"NA"', 'NA', 'NA']
+NA,NA
+['"13"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00000028"', '"Y105C5A.4"', '"abu-5"', 'NA', 'NA']
+NA,NA
+['"14"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00004159"', '"Y105C5A.5"', '"pqn-78"', 'NA', 'NA']
+NA,NA
+['"15"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00004160"', '"Y105C5A.6"', '"pqn-79"', 'NA', 'NA']
+WBGene00230526,WBGene00265595 WBGene00266111
+['"16"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013633"', '"Y105C5A.8a"', '"NA"', 'NA', 'NA']
+NA,NA
+['"17"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013634"', '"Y105C5A.9"', '"NA"', 'NA', 'NA']
+NA,NA
+['"18"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00005176"', '"Y105C5A.11"', '"srg-19"', 'NA', 'NA']
+NA,NA
+['"19"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013637"', '"Y105C5A.13a"', '"NA"', 'NA', 'NA']
+NA,NA
+['"20"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013636"', '"Y105C5A.12"', '"NA"', 'NA', 'NA']
+['"21"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00185102"', '"Y105C5A.1268"', '"NA"', 'NA', 'NA']
+['"22"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00194913"', '"Y105C5A.1272"', '"NA"', 'NA', 'NA']
+WBGene00227486,NA
+['"23"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013639"', '"Y105C5A.15b"', '"NA"', 'NA', 'NA']
+['"24"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013640"', '"Y105C5A.17"', '"NA"', 'NA', 'NA']
+['"25"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00194931"', '"Y105C5A.1273"', '"NA"', 'NA', 'NA']
+['"26"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013641"', '"Y105C5A.22"', '"NA"', 'NA', 'NA']
+WBGene00227487,WBGene00263056
+['"27"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013642"', '"Y105C5A.23"', '"daf-38"', 'NA', 'NA']
+['"28"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00194646"', '"Y105C5A.1270"', '"NA"', 'NA', 'NA']
+['"29"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00194645"', '"Y105C5A.1269"', '"NA"', 'NA', 'NA']
+WBGene00231009,NA
+['"30"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013643"', '"Y105C5A.24"', '"NA"', 'NA', 'NA']
+NA,NA
+['"31"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013645"', '"Y105C5B.1"', '"NA"', 'NA', 'NA']
+NA,NA
+['"32"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00001549"', '"Y105C5B.2"', '"gcy-25"', 'NA', 'NA']
+WBGene00223739,WBGene00263337 WBGene00264671 WBGene00265481
+['"33"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013646"', '"Y105C5B.3"', '"NA"', 'NA', 'NA']
+NA,NA
+['"34"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00005725"', '"Y105C5B.4"', '"srv-14"', 'NA', 'NA']
+NA,NA
+['"35"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013647"', '"Y105C5B.5"', '"NA"', 'NA', 'NA']
+NA,NA
+['"36"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00005726"', '"Y105C5B.6a"', '"srv-15"', 'NA', 'NA']
+NA,NA
+['"37"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013649"', '"Y105C5B.8"', '"NA"', 'NA', 'NA']
+NA,WBGene00267729
+['"38"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013650"', '"Y105C5B.9"', '"NA"', 'NA', 'NA']
+NA,NA
+['"39"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00005727"', '"Y105C5B.10"', '"srv-16"', 'NA', 'NA']
+NA,NA
+['"40"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013651"', '"Y105C5B.11b"', '"NA"', 'NA', 'NA']
+WBGene00226870,WBGene00258939
+['"41"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00004816"', '"Y105C5B.13"', '"skr-10"', 'NA', 'NA']
+NA,NA
+['"42"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013653"', '"Y105C5B.14"', '"NA"', 'NA', 'NA']
+WBGene00223739,WBGene00263337 WBGene00264671 WBGene00265481
+['"43"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013654"', '"Y105C5B.15"', '"NA"', 'NA', 'NA']
+NA,NA
+['"44"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013655"', '"Y105C5B.16"', '"lgc-19"', 'NA', 'NA']
+NA,NA
+['"45"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013656"', '"Y105C5B.17"', '"NA"', 'NA', 'NA']
+NA,NA
+['"46"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013657"', '"Y105C5B.18"', '"NA"', 'NA', 'NA']
+NA,NA
+['"47"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013658"', '"Y105C5B.19"', '"NA"', 'NA', 'NA']
+NA,NA
+['"48"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013659"', '"Y105C5B.20"', '"NA"', 'NA', 'NA']
+WBGene00227488,WBGene00268113
+['"49"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00002175"', '"Y105C5B.21a"', '"jac-1"', 'NA', 'NA']
+NA,NA
+['"50"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013661"', '"Y105C5B.23"', '"NA"', 'NA', 'NA']
+WBGene00227489,WBGene00256690
+['"51"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013665"', '"Y105C5B.29"', '"hlh-32"', 'NA', 'NA']
+NA,NA
+['"52"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013662"', '"Y105C5B.25"', '"NA"', 'NA', 'NA']
+['"53"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00194929"', '"Y105C5B.1413"', '"NA"', 'NA', 'NA']
+NA,NA
+['"54"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00012416"', '"Y7A9A.1"', '"NA"', 'NA', 'NA']
+WBGene00223739,WBGene00263337 WBGene00264671 WBGene00265481
+['"55"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00010411"', '"H25K10.1"', '"NA"', 'NA', 'NA']
+['"56"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00010412"', '"H25K10.2"', '"NA"', 'NA', 'NA']
+NA,NA
+['"57"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00005722"', '"H25K10.3"', '"srv-11"', 'NA', 'NA']
+NA,NA
+['"58"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00010413"', '"H25K10.4"', '"NA"', 'NA', 'NA']
+NA,NA
+['"59"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00010414"', '"H25K10.5"', '"hpa-1"', 'NA', 'NA']
+NA,NA
+['"60"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00010415"', '"H25K10.6"', '"irld-39"', 'NA', 'NA']
+NA,NA
+['"61"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00005808"', '"H25K10.7a"', '"srw-61"', 'NA', 'NA']
+NA,NA
+['"62"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00009535"', '"F38C2.1"', '"NA"', 'NA', 'NA']
+WBGene00227489,WBGene00256690
+['"63"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00001961"', '"F38C2.2"', '"hlh-17"', 'NA', 'NA']
+WBGene00227489,WBGene00256690
+['"64"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00009540"', '"F38C2.8"', '"hlh-31"', 'NA', 'NA']
+NA,NA
+['"65"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00009536"', '"F38C2.4a"', '"NA"', 'NA', 'NA']
+WBGene00226416 WBGene00227573 WBGene00228022,WBGene00257111 WBGene00257249
+['"66"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00009539"', '"F38C2.7"', '"NA"', 'NA', 'NA']
+WBGene00226416 WBGene00227573 WBGene00228022,WBGene00257111 WBGene00257249
+['"67"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00009537"', '"F38C2.5"', '"ccch-2"', 'NA', 'NA']
+NA,NA
+['"68"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00009538"', '"F38C2.6"', '"clec-191"', 'NA', 'NA']
+NA,NA
+['"69"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00023517"', '"Y7A9C.9"', '"srz-75"', 'NA', 'NA']
+NA,NA
+['"70"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00023518"', '"Y7A9C.8"', '"srz-76"', 'NA', 'NA']
+NA,NA
+['"71"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00023514"', '"Y7A9C.7"', '"srz-72"', 'NA', 'NA']
+WBGene00222376,WBGene00267783
+['"72"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00004287"', '"K03D3.10"', '"rac-2"', 'NA', 'NA']
+['"73"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00010531"', '"K03D3.5"', '"NA"', 'NA', 'NA']
+NA,NA
+['"74"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00010530"', '"K03D3.4"', '"srz-61"', 'NA', 'NA']
+['"75"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00043052"', '"K03D3.11"', '"srz-104"', 'NA', 'NA']
+NA,NA
+['"76"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00044587"', '"K03D3.12"', '"srz-105"', 'NA', 'NA']
+NA,NA
+['"77"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00010528"', '"K03D3.2"', '"NA"', 'NA', 'NA']
+NA,NA
+['"78"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00010527"', '"K03D3.1"', '"srz-74"', 'NA', 'NA']
+NA,NA
+['"79"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00045100"', '"K03D3.14"', '"NA"', 'NA', 'NA']
+NA,NA
+['"80"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00023513"', '"C35D6.10"', '"srz-71"', 'NA', 'NA']
+NA,NA
+['"81"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00023508"', '"C35D6.9a"', '"srz-38"', 'NA', 'NA']
+NA,NA
+['"82"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00005436"', '"C35D6.1"', '"srh-228"', 'NA', 'NA']
+NA,NA
+['"83"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00005435"', '"C35D6.2"', '"srh-227"', 'NA', 'NA']
+NA,NA
+['"84"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00007960"', '"C35D6.3"', '"NA"', 'NA', 'NA']
+WBGene00226416 WBGene00227573 WBGene00228022,WBGene00257111 WBGene00257249
+['"85"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00007961"', '"C35D6.4"', '"NA"', 'NA', 'NA']
+NA,NA
+['"86"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00012420"', '"Y7A9D.1"', '"NA"', 'NA', 'NA']
+['"87"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00185101"', '"Y65A5A.24"', '"NA"', 'NA', 'NA']
+NA,NA
+['"88"', '"Albendazole"', '"IV:15429543-16403255"', '"WBGene00013418"', '"Y65A5A.1"', '"NA"', 'NA', 'NA']
+NA,WBGene00266148 WBGene00266368 WBGene00266851
+['"89"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00022781"', '"ZK622.3b"', '"pmt-1"', 'NA', 'NA']
+NA,NA
+['"90"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00001806"', '"ZK622.2"', '"gur-5"', 'NA', 'NA']
+NA,NA
+['"91"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00044667"', '"ZK622.5"', '"NA"', 'NA', 'NA']
+WBGene00230791,WBGene00257743
+['"92"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00022780"', '"ZK622.1"', '"NA"', 'NA', 'NA']
+WBGene00223439,WBGene00266044
+['"93"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00001538"', '"F08B1.2"', '"gcy-12"', 'NA', 'NA']
+WBGene00223438,WBGene00266858
+['"94"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00006923"', '"F08B1.1a.1"', '"vhp-1"', 'NA', 'NA']
+['"95"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017287"', '"F09E5.9"', '"NA"', 'NA', 'NA']
+NA,NA
+['"96"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017288"', '"F09E5.10"', '"NA"', 'NA', 'NA']
+WBGene00234280,NA
+['"97"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017286"', '"F09E5.8"', '"NA"', 'NA', 'NA']
+NA,NA
+['"98"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017285"', '"F09E5.7.1"', '"NA"', 'NA', 'NA']
+NA,NA
+['"99"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00005226"', '"F09E5.4"', '"srg-69"', 'NA', 'NA']
+WBGene00223486,WBGene00261118
+['"100"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017289"', '"F09E5.11"', '"NA"', 'NA', 'NA']
+WBGene00223485,WBGene00257875
+['"101"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017284"', '"F09E5.5.1"', '"sec-6"', 'NA', 'NA']
+NA,NA
+['"102"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017292"', '"F09E5.16"', '"NA"', 'NA', 'NA']
+NA,NA
+['"103"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017290"', '"F09E5.12"', '"NA"', 'NA', 'NA']
+NA,NA
+['"104"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00000094"', '"F09E5.13"', '"agt-2"', 'NA', 'NA']
+WBGene00223484,WBGene00262967
+['"105"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017283"', '"F09E5.3"', '"NA"', 'NA', 'NA']
+WBGene00223483,WBGene00257168
+['"106"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017282"', '"F09E5.2"', '"algn-2"', 'NA', 'NA']
+WBGene00223482,WBGene00266625
+['"107"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00004034"', '"F09E5.1"', '"pkc-3"', 'NA', 'NA']
+WBGene00224760,WBGene00265620
+['"108"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017136"', '"EEED8.6"', '"ccpp-6"', 'NA', 'NA']
+WBGene00231747,WBGene00263538
+['"109"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00003583"', '"EEED8.8"', '"ndx-6"', 'NA', 'NA']
+WBGene00223379,NA
+['"110"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017144"', '"EEED8.16"', '"brap-2"', 'NA', 'NA']
+WBGene00223377,WBGene00267297
+['"111"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017137"', '"EEED8.9"', '"pink-1"', 'NA', 'NA']
+WBGene00231537,WBGene00266811
+['"112"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017138"', '"EEED8.10a"', '"NA"', 'NA', 'NA']
+WBGene00223374,WBGene00265270
+['"113"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00003393"', '"EEED8.5"', '"mog-5"', 'NA', 'NA']
+NA,NA
+['"114"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017139"', '"EEED8.11"', '"clec-141"', 'NA', 'NA']
+WBGene00222526,WBGene00262957
+['"115"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017140"', '"EEED8.12"', '"NA"', 'NA', 'NA']
+WBGene00222526,WBGene00262957
+['"116"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017135"', '"EEED8.4"', '"NA"', 'NA', 'NA']
+NA,NA
+['"117"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017141"', '"EEED8.13"', '"NA"', 'NA', 'NA']
+['"118"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00194696"', '"EEED8.18"', '"NA"', 'NA', 'NA']
+NA,NA
+['"119"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017142"', '"EEED8.14"', '"NA"', 'NA', 'NA']
+NA,NA
+['"120"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017134"', '"EEED8.3"', '"NA"', 'NA', 'NA']
+NA,NA
+['"121"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017133"', '"EEED8.2"', '"NA"', 'NA', 'NA']
+NA,NA
+['"122"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017143"', '"EEED8.15"', '"NA"', 'NA', 'NA']
+NA,NA
+['"123"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017219"', '"F07F6.7"', '"NA"', 'NA', 'NA']
+NA,NA
+['"124"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017220"', '"F07F6.8"', '"NA"', 'NA', 'NA']
+WBGene00223433,WBGene00257628 WBGene00267081
+['"125"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017217"', '"F07F6.4"', '"NA"', 'NA', 'NA']
+NA,NA
+['"126"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017216"', '"F07F6.2"', '"NA"', 'NA', 'NA']
+WBGene00223434,WBGene00256793
+['"127"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017218"', '"F07F6.5"', '"dct-5"', 'NA', 'NA']
+WBGene00223432,NA
+['"128"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017215"', '"F07F6.1"', '"NA"', 'NA', 'NA']
+NA,WBGene00267681
+['"129"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00003774"', '"F07F6.6.1"', '"nmr-1"', 'NA', 'NA']
+WBGene00224734,NA
+['"130"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00000935"', '"F56D1.7"', '"daz-1"', 'NA', 'NA']
+WBGene00269349,WBGene00267887
+['"131"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00000548"', '"F56D1.4b"', '"clr-1"', 'NA', 'NA']
+WBGene00224730,WBGene00256090
+['"132"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00018960"', '"F56D1.2"', '"NA"', 'NA', 'NA']
+WBGene00220525,NA
+['"133"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00018959"', '"F56D1.1"', '"NA"', 'NA', 'NA']
+NA,NA
+['"134"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017394"', '"F12A10.5"', '"cal-8"', 'NA', 'NA']
+NA,WBGene00257028 WBGene00257194 WBGene00257195 WBGene00257196 WBGene00258971 WBGene00263369 WBGene00265628 WBGene00267046
+['"135"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017393"', '"F12A10.4"', '"nep-5"', 'NA', 'NA']
+['"136"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017395"', '"F12A10.6"', '"NA"', 'NA', 'NA']
+NA,NA
+['"137"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017390"', '"F12A10.1"', '"NA"', 'NA', 'NA']
+NA,NA
+['"138"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017396"', '"F12A10.7"', '"NA"', 'NA', 'NA']
+NA,NA
+['"139"', '"Fenbendazole_15"', '"II:5274777-11908334"', '"WBGene00017397"', '"F12A10.8"', '"NA"', 'NA', 'NA']
+WBGene00227692,WBGene00259562

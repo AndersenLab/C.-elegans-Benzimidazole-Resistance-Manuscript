@@ -1,0 +1,115 @@
+---
+output: pdf_document
+fontsize: 10pt
+geometry: margin=0.5in
+---
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library("linkagemapping")
+library("easysorter")
+library(dplyr)
+library(ggplot2)
+library(stringr)
+library(ggrepel)
+library(gridExtra)
+```
+
+# <i>C. elegans</i> whole piRNA interval NILs
+
+* piRNA interval: Chr IV: 13.5 - 17.2 Mbs
+* Left Primers (InDel Left: 13207120)
+    + oECA904: aacagatactcgccgttgct
+    + oECA905: atttgtaccacgcgtgacct
+    + N2 Size: 526, CB4856 Size: 942
+* Right Primers (InDel Right: 17356993)
+    + oECA910: gacaacgcccactacgacaa
+    + oECA911: acccaaccagttgagcacat
+    + N2 Size: 443, CB4856 Size: 596
+
+* CB4856>N2 NIL
+    - **ECA240** / eanIR160 (IV, CB4856>N2)
+    - Starting RIAIL: QX349
+
+* N2>CB4856 NIL
+    - **ECA241** / eanIR161 (IV, N2>CB4856)
+    - Starting RIAIL: QX375
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=6, fig.height=2}
+
+plotRIAILgenotypes <- function(riails, ch, leftPos, rightPos){
+  library(data.table)
+  library(tidyr)
+  genos <- data.frame(fread("~/Dropbox/AndersenLab/LabFolders/Mostafa/Cel_NIL_codes/N2xCB4856_598RIAILs_gen.csv",header = T))
+  load("~/Dropbox/AndersenLab/LabFolders/Mostafa/Cel_NIL_codes/marker_pos_conversion.Rda")
+  
+  test <- do.call(cbind, lapply(genos[,4:ncol(genos)], function(x){
+    temp <- data.frame(gen = x)
+    temp <- mutate(temp, num = ifelse(gen =="AA",1,
+                                      ifelse(gen=="AB",0,NA)))
+    temp <- select(temp, -gen)
+  }))
+  
+  test1 <- data.frame(genos[,1:3], test)
+  colnames(test1) <- c("id","chr","CM",seq(1,ncol(test1)-3))
+  
+  test1 <- left_join(test1, conv, by = "id")
+  
+  pl <- test1 %>%
+    gather(riail,geno, -id, -chr,-CM,-pos)%>%
+    filter(riail %in% riails)%>%
+    mutate(cbgen = ifelse(geno==1,0,
+                          ifelse(geno==0,1,NA)),
+           Lint = leftPos,
+           Rint = rightPos)%>%
+    filter(chr == ch)%>%
+    ggplot(.)+
+    aes(x = pos/1e6, y = geno)+
+    facet_grid(riail~chr, scales = "free_y")+
+    geom_ribbon(aes(ymin = 0, ymax = geno, alpha=.5), fill ="orange")+
+    geom_ribbon(aes(ymin = 0, ymax = cbgen, alpha=.5), fill ="blue")+
+    geom_vline(aes(xintercept = Lint/1e6))+
+    geom_vline(aes(xintercept = Rint/1e6))+
+    theme(axis.text.x = element_text(size=10, face="bold", color="black"),
+          axis.text.y = element_text(size=0, face="bold", color="black"),
+          axis.title.x = element_text(size=10, face="bold", color="black"),
+          axis.title.y = element_text(size=10, face="bold", color="black"),
+          strip.text.x = element_text(size=10,face="bold", color="black"),
+          strip.text.y = element_text(size=10, angle =0, face="bold", color="black"),
+          plot.title = element_text(size=14, face="bold"),
+          legend.position = "none")+
+    scale_y_continuous(breaks=NULL) +
+    labs(x = "Genomic Position (Mb)", y = "")
+  
+  df <- test1 %>%
+    gather(riail,geno, -id, -chr,-CM,-pos)%>%
+    filter(riail %in% riails)%>%
+    filter(chr == ch)%>%
+    # select(riail, pos, geno)%>%
+    spread(riail,geno)%>%
+    arrange(pos)  %>%
+    mutate( Lint = leftPos,
+             Rint = rightPos)
+  pl
+  #return(list(pl,df))
+}
+plotRIAILgenotypes(c(375,349), "IV", 13500000, 17200000)
+
+```
+
+# <i>C. elegans</i> mutants
+    
+* piRNA mutants confirmed and/or backcrossed in N2 background
+    + ECA270: <i>alg-4(tm1184);alg-3(tm1155)</i> [ALG-3/4 class 26G RNA]
+    + ECA271: WM158 / <i>ergo-1(tm1860)</i> [ERGO-1 class 26G RNA]
+    + ECA286: <i>prg-1(n4357)</i> [21-U RNA]: SX922/ECA269 backcrossed to N2 (9x) and selfed (6x)
+    + FX234:  <i>ben-1</i>
+    
+* Mutant confirmation PCR primers
+    + <i>ergo-1(tm1860)</i>: oECA1033	AAGCGTACGAACCCGAGCTT / oECA1034	GAGCGGCTGCTCAGAAGACT
+
+* <i>prg-1(n4357)</i> PCR primers for backcrossing 
+    + oECA1019: AGTCGTGGTACAGATCGTAG
+    + oECA1020: GAGAGGCCGTGGTTCAGGAT
+    + Wild-type size = 1972, <i>prg-1(n4357)</i> size = 1248 (724 bp deletion)
+    + PCR parameters: Annealing T = 55.5C, Extention time = 2:30
+    

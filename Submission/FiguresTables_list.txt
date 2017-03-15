@@ -1,0 +1,64 @@
+SuppFig 1 -> SFig 1 : Ce DRs 
+[DoseResponses/Celegans: Ce_DR.tiff] 
+
+Fig 1 -> Fig1: Ce QTL/split 
+[LinkageMapping/Celegans: Ce_Linkage.tiff]
+
+SuppTable 1 -> STable 1: Ce QTL details
+[LinkageMapping/Celegans: Ce_Linkage.csv]
+
+Extended Data Fig 1 -> SFig2: Ce QTL grouped by drug and trait 
+[LinkageMapping/Celegans: Ce_Linkage_Grouped.tiff]
+
+SuppFig 2 -> SFig3: Ce trait correlations
+[LinkageMapping/Celegans: Ce_Correlation.tiff]
+
+Extended Data Fig 2 -> SFig4: Ce ben-1 effect size
+[Celegans_other/ben1: ben1.tiff]
+
+Fig 2 -> Fig2: Ce NIL narrowing and interval annotation
+[Celegans_other/QTLnarrow: QTLinterval.tiff]
+
+SuppTable 2 -> STable2: Ce QTL protein-coding variants (high/moderate)
+[Celegans_other/QTLnarrow: Ce_QTL_protvars.csv]
+
+SuppTable 3 -> STable3: Ce QTL piRNA genes
+[Celegans_other/QTLnarrow: Ce_QTL_piRNAvars.csv]
+
+Fig 3 -> Fig3: Ce NILs, mutants, RNA-seq
+CeNILS/mutants: [Celegans_other/piRNA:]
+RNAseq candidates: [RNApipeline/...:]
+
+SuppTable 4 -> STable4: Strain-specific putative piRNAs
+[RNApipeline/targets/seq_21unique: Unique21mers.csv]
+
+*SuppTable 5 -> STable5: Predicted targets / seq information
+
+SuppFig 3 -> SFig5: Cb DRs 
+[DoseResponses/Cbriggsae: Cb_DR.tiff]
+
+SuppFig 4 -> SFig6: Cb trait correlations
+[LinkageMapping/Cbriggsae: Cb_Correlation.tiff]
+
+Extended Data Fig 3 -> SFig7: Cb QTL/split
+[LinkageMapping/Cbriggsae: Cb_Linkage2.tiff]
+
+SuppTable 6 -> STable6: Cb QTL details
+[LinkageMapping/Cbriggsae: Cb_Linkage.csv]
+
+SuppTable 7 -> STable7: Cb variants and effects
+[LinkageMapping/Cbriggsae: Cb_QTL_vars.csv]
+
+SuppTable8 -> STable8: Parasite Orthologs (referenced in Methods)
+[Celegans_other/Parasite_orthologs: ceQTLvars-final.csv]
+
+
+---
+
+"Supplemental Methods" referenced as a whole in the main manuscript and methods sections
+
+SuppMethods1: Sorter Assay
+
+SuppMethods2: Bioinformatics pipeline (replace)
+
+SuppMethods3: NILS/mutants
