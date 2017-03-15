@@ -9,7 +9,7 @@ library(cowplot)
 library(viridis)
 options(stringsAsFactors = FALSE)
 
-setwd("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/LinkageMapping/Cbriggsae")
+setwd("LinkageMapping/Cbriggsae")
 load("Cb_BZ_GWER.Rda")
 
 cb_mapping_gwer <- Cb_BZ_GWER %>%
@@ -51,7 +51,6 @@ j <- 1
 benzpeaksR$unique <- NA
 for(i in 1:nrow(benzpeaksR)){
   benzpeaksR$unique[i] <- j
-  #  ifelse((benzpeaksR$ci_r_pos[i] - benzpeaksR$ci_l_pos[i+1]) >= 0.01*(benzpeaksR$ci_r_pos[i+1] - benzpeaksR$ci_l_pos[i+1]) &  benzpeaksR$chr[i] == benzpeaksR$chr[i+1] &  benzpeaksR$sp.cond[i] == benzpeaksR$sp.cond[i+1], j <- j, j <- j+1)
   ifelse((benzpeaksR$ci_l_pos2[i+1] - benzpeaksR$ci_r_pos2[i]) <= 1000000 &  benzpeaksR$chr[i] == benzpeaksR$chr[i+1] &  benzpeaksR$sp.cond[i] == benzpeaksR$sp.cond[i+1], j <- j, j <- j+1)
 }
 benzpeaksR <- benzpeaksR %>%
@@ -150,7 +149,7 @@ plot
 ### PxG Split
 data("AF16xHK104cross")
 cross <- AF16xHK104cross
-load("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ-prep/LinkageMapping/Cbriggsae/cb_regressed.Rda")
+load("Github-BZ-prep/LinkageMapping/Cbriggsae/cb_regressed.Rda")
 pheno <- regressed
 mapcross <- mergepheno(cross, pheno)
 pgtrait <- filter(cb_mapping_gwer, trait == "fenbendazole.n")
@@ -292,7 +291,7 @@ write.csv(TableCb, file = "Cb_Linkage.csv")
 ####### S FIGURE: correlations for all drugs
 #####################
 
-load("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ-prep/LinkageMapping/Cbriggsae/cb_regressed.Rda")
+load("Github-BZ-prep/LinkageMapping/Cbriggsae/cb_regressed.Rda")
 phenoS5 <- regressed %>% ungroup()
 bzs <- c("albendazole","fenbendazole","thiabendazole")
 sizetraits <- c("median.TOF","median.EXT","mean.TOF","mean.EXT","q75.TOF","q75.EXT","q90.TOF","q90.EXT")
@@ -426,7 +425,7 @@ ggsave(plot = final_plot, filename = "Cb_Linkage2.tiff", width = 15, height = 8)
 #####################
 
 ### PREPARE VARIANT FILE FOR BRIGGSAE FENBENDAZOLE QTL INTERVAL
-setwd("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/LinkageMapping/Cbriggsae")
+setwd("LinkageMapping/Cbriggsae")
 
 region <- snpeff2("IV:2563732-3447467", 
                   severity = c("LOW", "MODERATE", "HIGH", "MODIFIER"), 
@@ -566,7 +565,7 @@ snpeff2 <- function(...,
 }
 
 ### S TABLE Variants for QTL interval
-load("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/LinkageMapping/Cbriggsae/QTLvariants/Briggsae_vars.Rda")
+load("LinkageMapping/Cbriggsae/QTLvariants/Briggsae_vars.Rda")
 Briggsae_vars <- Briggsae_vars %>%
   filter(FILTER == "PASS") %>%
   filter(transcript_biotype == "protein_coding") %>%

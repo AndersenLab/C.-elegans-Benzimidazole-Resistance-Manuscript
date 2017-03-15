@@ -10,7 +10,7 @@ library(data.table)
 library(ggrepel)
 library(viridis)
 
-setwd("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/Celegans_other/QTLnarrow")
+setwd("Celegans_other/QTLnarrow")
 
 ########################
 #### PLOT: NIL NARROWING

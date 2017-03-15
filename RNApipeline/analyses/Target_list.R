@@ -3,7 +3,7 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 
-setwd("~/DropBox/AndersenLab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/RNApipeline/analyses")
+setwd("RNApipeline/analyses")
 
 #load DEseq differential expression output
 load("../diffexp/Diffexp.Rda")
@@ -40,7 +40,7 @@ for (i in 1:nrow(DE_TPM_ann)){
 save(DE_TPM_ann, file = "DE_TPM_ann.Rda")
 
 ##### START HERE
-setwd("~/DropBox/AndersenLab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/RNApipeline/analyses")
+setwd("RNApipeline/analyses")
 
 #load differential expression call and TPM values for mRNA and 22G expression + annotations
 load("DE_TPM_ann.Rda")
@@ -102,7 +102,7 @@ save(DE_TPMf_blast, file = "DE_TPMf_blast.Rda")
 
 
 #### OUTPUTS 
-setwd("~/DropBox/AndersenLab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/RNApipeline/analyses")
+setwd("RNApipeline/analyses")
 
 ### Table: Supplementary Table 5
 
@@ -134,16 +134,4 @@ volcano_plot <- ggplot(volcano_data)+
   xlab("log2(22G RNA Ratio)") + ylab("log2(mRNA Ratio)")
 volcano_plot
 
-
-
-
-#ignore below
-#### filter based on genes known to be regulated by PRG-1
-
-#load list of genes that lose 22G enrichment in prg-1 KO ()
-list_22g <- read.csv("../other/wb_id_list.txt", header = F)
-list_22g <- list_22g$V1
-
-DE_TPMf <- DE_TPMf %>% #DE_TPMf
-  filter(WB_ID %in% list_22g)
   

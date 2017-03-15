@@ -7,7 +7,7 @@ library(ggplot2)
 library(broom)
 library(cowplot)
 
-setwd("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/Celegans_other/piRNA")
+setwd("Celegans_other/piRNA")
 
 ########################
 #### PLOT piRNA interval NILs
@@ -80,44 +80,6 @@ piRNA_NILs <- ggdraw() +
 piRNA_NILs
 
 
-########################
-#### PLOT Mutants
-########################
-
-load("piRNA_mutants.Rda")
-regressed$strain <- factor(regressed$strain, 
-                           levels=c("N2", "CB", "ECA270","ECA271", "ECA286", "ECA352"))
-strainsplot <- c("N2", "CB", "ECA270","ECA271", "ECA286", "ECA352")
-
-alb <- subset(regressed, condition=="Albendazole") %>%
-  filter(trait == "q90.EXT")%>%
-  filter(strain %in% strainsplot)
-
-plot_mutants <-  ggplot(alb)+
-  aes(x = strain, y = phenotype, fill = strain)+
-  geom_boxplot(outlier.size= NA, alpha = 0.5, lwd=1)+
-  geom_jitter(size =2.5, alpha=.5, width = 0.35)+
-  theme_bw()+
-  theme(legend.position="none",
-        panel.border = element_rect(size=1, colour = "black"))+
-  labs(x = "Strain", y = "Regressed Length (µm)", title="Albendazole q75.EXT") +
-  scale_fill_manual(values = c("N2" = "orange","CB" = "blue","ECA270" = "orange","ECA271" = "orange","ECA286" = "orange","ECA352" = "blue","FX234" = "orange")) +
-  theme(axis.text.x = element_text(size=14, face="bold", color="black"),
-        axis.text.y = element_text(size=12, face="bold", color="black"),
-        axis.title.x = element_text(size=0, face="bold", color="black"),
-        axis.title.y = element_text(size=16, face="bold", color="black"),
-        strip.text.x = element_text(size=16, face="bold", color="black"),
-        strip.text.y = element_text(size=16, face="bold", color="black"),
-        plot.title = element_text(size=0, face="bold")) +
-  scale_x_discrete(labels=c("N2" = expression(paste(bold("N2"))), 
-                            "CB" = expression(paste(bold("CB4856"))),
-                            "ECA270" = expression(paste(bolditalic("alg-4; alg-3"))), 
-                            "ECA271" = expression(paste(bolditalic("ergo-1"))),
-                            "ECA286" = expression(paste(bolditalic("prg-1"))),
-                            "ECA352" = expression(paste(bolditalic("prg-1"))),
-                            "FX234" = expression(paste(bolditalic("ben-1")))))
-plot_mutants
-
 
 ########################
 #### PLOT Mutants / alternative with SD bars
@@ -127,11 +89,12 @@ plot_mutants
 #se <- function(x) sqrt(var(x)/length(x))
 se <- function(x) sd(x) #actually sd
 
-load("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/GitHub-BZ-prep/Celegans_other/Mutants/UnRegressed_piRNAmut1ab.Rda")
+load("GitHub-BZ-prep/Celegans_other/Mutants/UnRegressed_piRNAmut1ab.Rda")
 biopruned <- unregressed %>% ungroup()
+
 #pick strains 
-#strainslist <- c("N2", "CB", "ECA270","ECA271", "ECA286", "ECA352")
 strainslist <- c("N2", "CB", "ECA270","ECA271", "ECA286")
+
 barplot <- biopruned %>%
   #filter(assay == "a") %>%
   filter(strain %in% strainslist) %>%
@@ -159,7 +122,6 @@ barplot <- barplot %>%
 
 barplot$strain <- factor(barplot$strain, 
                          levels=c("N2", "CB", "ECA270","ECA271", "ECA286"))
-#                         levels=c("N2", "CB", "ECA270","ECA271", "ECA286", "ECA352"))
 
 strain_mod = lm(formula = phenotype_R ~ strain, data = barplot)
 summary(strain_mod)
@@ -170,7 +132,6 @@ summary(strain_mod)
 #   strainECA270   33.843     12.480   2.712  0.00702 ** 
 #   strainECA271   28.241     12.480   2.263  0.02424 *  
 #   strainECA286  -90.348     12.528  -7.212 3.32e-12 ***
-#   strainECA352 -121.232     12.788  -9.480  < 2e-16 ***
 # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 # 
 # Residual standard error: 68.27 on 357 degrees of freedom
@@ -198,16 +159,11 @@ test271 <- filter(barplot,strain == "ECA271")
 test271 <- test271$phenotype_R
 test286 <- filter(barplot,strain == "ECA286")
 test286 <- test286$phenotype_R
-#test352 <- filter(barplot,strain == "ECA352")
-#test352 <- test352$phenotype_R
+
 t.test(N2test,CBtest) p-value < 2.2e-16
 t.test(N2test,test270) p-value = 0.00845
 t.test(N2test,test271) p-value = 0.01471
 t.test(N2test,test286) p-value = 1.195e-11
-#t.test(N2test,test352) p-value = 1.02e-15
-#t.test(test286,test352) p-value = 0.02574
-#t.test(CBtest,test352) p-value = 0.4932
-
 
 library(scales)
 plot_mutants_bar <-  ggplot(barplot)+
@@ -234,14 +190,10 @@ plot_mutants_bar <-  ggplot(barplot)+
                             "ECA270" = expression(paste(bolditalic("alg-4(0); alg-3(0)"))), 
                             "ECA271" = expression(paste(bolditalic("ergo-1(0)"))),
                             "ECA286" = expression(paste(bolditalic("prg-1(0)")))))
-#"ECA352" = expression(paste(bolditalic("prg-1(0)"))))) #+
-#"FX234" = expression(paste(bolditalic("ben-1"))) + 
-#scale_y_continuous(limits=c(-270,0),oob = rescale_none)
 plot_mutants_bar
 
 
 #### FINAL PLOT
 final_plot <- plot_grid(piRNA_NILs, plot_mutants_bar, volcano_plot, nrow=1, labels = c('A','B','C'), rel_widths = c(0.33,0.42,0.25),align = "h", scale =0.98)
 final_plot
-#ggsave(plot = final_plot, filename = "Figure3new.tiff", width = 18.5, height = 4.75)
 ggsave(plot = final_plot, filename = "Figure3.tiff", width = 18.5, height = 5)

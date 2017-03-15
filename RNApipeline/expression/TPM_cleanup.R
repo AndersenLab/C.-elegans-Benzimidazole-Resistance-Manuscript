@@ -6,24 +6,24 @@ library(stringr)
 ########################################################
 ####### TPM Counts for mRNA and 22G expression #########
 ########################################################
-setwd("~/GitHub/BZlocal/expression/")
+setwd("expression/")
 
 #Load in stringtie normalized abundances for R
-RN2A <- read.csv("~/GitHub/BZlocal/expression/Rexpression/N2A/N2A_abund.tab", header=T, sep="\t") %>%
+RN2A <- read.csv("expression/Rexpression/N2A/N2A_abund.tab", header=T, sep="\t") %>%
   mutate(N2_A_R_TPM = TPM) %>% select(-FPKM,-TPM)
-RN2B <- read.csv("~/GitHub/BZlocal/expression/Rexpression/N2B/N2B_abund.tab", header=T, sep="\t") %>%
+RN2B <- read.csv("expression/Rexpression/N2B/N2B_abund.tab", header=T, sep="\t") %>%
   mutate(N2_B_R_TPM = TPM) %>% select(Gene.ID,N2_B_R_TPM) 
-RN2C <- read.csv("~/GitHub/BZlocal/expression/Rexpression/N2C/N2C_abund.tab", header=T, sep="\t") %>%
+RN2C <- read.csv("expression/Rexpression/N2C/N2C_abund.tab", header=T, sep="\t") %>%
   mutate(N2_C_R_TPM = TPM) %>% select(Gene.ID,N2_C_R_TPM) 
-RN2D <- read.csv("~/GitHub/BZlocal/expression/Rexpression/N2D/N2D_abund.tab", header=T, sep="\t") %>%
+RN2D <- read.csv("expression/Rexpression/N2D/N2D_abund.tab", header=T, sep="\t") %>%
   mutate(N2_D_R_TPM = TPM) %>% select(Gene.ID,N2_D_R_TPM) 
-RCBA <- read.csv("~/GitHub/BZlocal/expression/Rexpression/CBA/CBA_abund.tab", header=T, sep="\t") %>%
+RCBA <- read.csv("expression/Rexpression/CBA/CBA_abund.tab", header=T, sep="\t") %>%
   mutate(CB_A_R_TPM = TPM) %>% select(Gene.ID,CB_A_R_TPM) 
-RCBB <- read.csv("~/GitHub/BZlocal/expression/Rexpression/CBB/CBB_abund.tab", header=T, sep="\t") %>%
+RCBB <- read.csv("expression/Rexpression/CBB/CBB_abund.tab", header=T, sep="\t") %>%
   mutate(CB_B_R_TPM = TPM) %>% select(Gene.ID,CB_B_R_TPM) 
-RCBC <- read.csv("~/GitHub/BZlocal/expression/Rexpression/CBC/CBC_abund.tab", header=T, sep="\t") %>%
+RCBC <- read.csv("expression/Rexpression/CBC/CBC_abund.tab", header=T, sep="\t") %>%
   mutate(CB_C_R_TPM = TPM) %>% select(Gene.ID,CB_C_R_TPM) 
-RCBD <- read.csv("~/GitHub/BZlocal/expression/Rexpression/CBD/CBD_abund.tab", header=T, sep="\t") %>%
+RCBD <- read.csv("expression/Rexpression/CBD/CBD_abund.tab", header=T, sep="\t") %>%
   mutate(CB_D_R_TPM = TPM) %>% select(Gene.ID,CB_D_R_TPM) 
 R_TPM <- merge(RN2A,RN2B,by="Gene.ID")
 R_TPM <- merge(R_TPM,RN2C,by="Gene.ID")
@@ -37,21 +37,21 @@ colnames(R_TPM)[2] <- c("Gene_ID")
 R_TPM <- R_TPM %>% select(-Gene_ID,-Coverage)
 
 #Load in stringtie normalized abundances for G
-GN2A <- read.csv("~/GitHub/BZlocal/expression/Gexpression/N2AP/N2AP_abund.tab", header=T, sep="\t") %>%
+GN2A <- read.csv("expression/Gexpression/N2AP/N2AP_abund.tab", header=T, sep="\t") %>%
   mutate(N2_A_G_TPM = TPM) %>% select(-FPKM,-TPM)
-GN2B <- read.csv("~/GitHub/BZlocal/expression/Gexpression/N2BP/N2BP_abund.tab", header=T, sep="\t") %>%
+GN2B <- read.csv("expression/Gexpression/N2BP/N2BP_abund.tab", header=T, sep="\t") %>%
   mutate(N2_B_G_TPM = TPM) %>% select(Gene.ID,N2_B_G_TPM) 
-GN2C <- read.csv("~/GitHub/BZlocal/expression/Gexpression/N2CP/N2CP_abund.tab", header=T, sep="\t") %>%
+GN2C <- read.csv("expression/Gexpression/N2CP/N2CP_abund.tab", header=T, sep="\t") %>%
   mutate(N2_C_G_TPM = TPM) %>% select(Gene.ID,N2_C_G_TPM) 
-GN2D <- read.csv("~/GitHub/BZlocal/expression/Gexpression/N2DP/N2DP_abund.tab", header=T, sep="\t") %>%
+GN2D <- read.csv("expression/Gexpression/N2DP/N2DP_abund.tab", header=T, sep="\t") %>%
   mutate(N2_D_G_TPM = TPM) %>% select(Gene.ID,N2_D_G_TPM) 
-GCBA <- read.csv("~/GitHub/BZlocal/expression/Gexpression/CBAP/CBAP_abund.tab", header=T, sep="\t") %>%
+GCBA <- read.csv("expression/Gexpression/CBAP/CBAP_abund.tab", header=T, sep="\t") %>%
   mutate(CB_A_G_TPM = TPM) %>% select(Gene.ID,CB_A_G_TPM) 
-GCBB <- read.csv("~/GitHub/BZlocal/expression/Gexpression/CBBP/CBBP_abund.tab", header=T, sep="\t") %>%
+GCBB <- read.csv("expression/Gexpression/CBBP/CBBP_abund.tab", header=T, sep="\t") %>%
   mutate(CB_B_G_TPM = TPM) %>% select(Gene.ID,CB_B_G_TPM) 
-GCBC <- read.csv("~/GitHub/BZlocal/expression/Gexpression/CBCP/CBCP_abund.tab", header=T, sep="\t") %>%
+GCBC <- read.csv("expression/Gexpression/CBCP/CBCP_abund.tab", header=T, sep="\t") %>%
   mutate(CB_C_G_TPM = TPM) %>% select(Gene.ID,CB_C_G_TPM) 
-GCBD <- read.csv("~/GitHub/BZlocal/expression/Gexpression/CBDP/CBDP_abund.tab", header=T, sep="\t") %>%
+GCBD <- read.csv("expression/Gexpression/CBDP/CBDP_abund.tab", header=T, sep="\t") %>%
   mutate(CB_D_G_TPM = TPM) %>% select(Gene.ID,CB_D_G_TPM) 
 G_TPM <- merge(GN2A,GN2B,by="Gene.ID")
 G_TPM <- merge(G_TPM,GN2C,by="Gene.ID")

@@ -3,13 +3,13 @@ library(ggplot2)
 library(cegwas)
 db <- get_db()
 
-setwd("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/Celegans_other/Parasite_orthologs")
+setwd("Celegans_other/Parasite_orthologs")
 
 #### C. elegans (takes all QTL - finds overlapping set and all genes with variants in intervals)
 #outputs ceQTLvars.csv
 
 #Load TableS1 (C. elegans QTL)
-ceQTL = read.csv("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/LinkageMapping/Celegans/Ce_Linkage.csv", header = TRUE) %>%
+ceQTL = read.csv("LinkageMapping/Celegans/Ce_Linkage.csv", header = TRUE) %>%
   select(-X)
 
 #Reduced set: check for overlapping QTL for each drug 

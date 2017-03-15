@@ -3,7 +3,7 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 
-setwd("~/DropBox/AndersenLab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/RNApipeline/targets")
+setwd("RNApipeline/targets")
 
 N2unique_targets <- read.csv("blast/N2_blast.txt", header=F, sep="\t") 
 colnames(N2unique_targets) <- c("Query","Chr","PID","AlnLen","Mismatch","Gaps","Qstart","Qend","Start","End","Evalue","Bitscore")
@@ -42,4 +42,3 @@ save(All_targets, file = "Blast_targets.Rda")
 load("Blast_targets.Rda")
 
 #cross-reference putative piRNAs with known piRNAs
-#dolater

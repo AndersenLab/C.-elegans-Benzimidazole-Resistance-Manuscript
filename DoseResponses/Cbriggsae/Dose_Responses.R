@@ -5,9 +5,9 @@ library(tidyr)
 library(R.utils)
 
 #### Calculate and Plot Heritabilities
-setwd("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/DoseResponses/Cbriggsae")
+setwd("DoseResponses/Cbriggsae")
 load("Cb_BZ_DR.Rda")
-source("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/DoseResponses/Cbriggsae/Dose_Response_Fxns.R")
+source("DoseResponses/Cbriggsae/Dose_Response_Fxns.R")
 all_herits <- list()
 dr_final <- data.frame(strain = character(), phenotype = numeric(), trait = character(), cond_dose = numeric(),stringsAsFactors=FALSE)
 

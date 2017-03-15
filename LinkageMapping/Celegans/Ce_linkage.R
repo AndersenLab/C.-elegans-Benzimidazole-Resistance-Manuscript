@@ -9,7 +9,7 @@ library(cowplot)
 library(viridis)
 library(tidyr)
 
-setwd("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/LinkageMapping/Celegans")
+setwd("LinkageMapping/Celegans")
 load("Ce_BZ_GWER.Rda")
 
 benzpeaks <- Ce_BZ_GWER %>%
@@ -146,8 +146,7 @@ plot
 ### PxG Split
 data("N2xCB4856cross")
 cross <- N2xCB4856cross
-#pheno <- readRDS("~/Dropbox/AndersenLab/LabFolders/Mostafa/Cel_Linkage_Mapping/RIAILs1_processed.rds")
-pheno <- readRDS("~/Dropbox/AndersenLab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/GitHub-BZ-prep/LinkageMapping/Celegans/RIAILs1_processed.rds")
+pheno <- readRDS("GitHub-BZ-prep/LinkageMapping/Celegans/RIAILs1_processed.rds")
 mapcross <- mergepheno(cross, pheno, set = 2)
 pgtrait <- filter(Ce_BZ_GWER, trait == "albendazole.q75.EXT")
 pxgplot <- pxgplot2(cross = mapcross, map = pgtrait)

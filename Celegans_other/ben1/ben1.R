@@ -10,7 +10,7 @@ library(data.table)
 library(ggrepel)
 library(viridis)
 
-setwd("~/Dropbox/Andersenlab/LabFolders/Mostafa/Manuscripts/Benzimidazoles/Github-BZ/Celegans_other/ben1")
+setwd("Celegans_other/ben1")
 
 ########################
 #### PLOT: Ben-1 mutant
